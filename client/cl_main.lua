@@ -75,15 +75,7 @@ CreateThread(function()
             end
         end
 
-        table.insert(menu, {
-            header = "Cerrar",
-            icon = "fa-solid fa-xmark",
-            params = {
-                event = "qb-menu:closeMenu"
-            }
-        })
-
-        exports['qb-menu']:openMenu(menu)
+        exports['DP-Menu']:openMenu(menu)
     end)
 
     -- Menú para dar ped con edición de campos
@@ -119,10 +111,10 @@ CreateThread(function()
             header = "Cancelar",
             icon = "fa-solid fa-xmark",
             params = {
-                event = "qb-menu:closeMenu"
+                event = "DP-Menu:closeMenu"
             }
         })
-        exports['qb-menu']:openMenu(menu)
+        exports['DP-Menu']:openMenu(menu)
     end)
 
     RegisterNetEvent('dp-pedsystem:client:EditPedName', function()
@@ -222,15 +214,7 @@ CreateThread(function()
             })
         end
 
-        table.insert(menu, {
-            header = "Cerrar",
-            icon = "fa-solid fa-xmark",
-            params = {
-                event = "qb-menu:closeMenu"
-            }
-        })
-
-        exports['qb-menu']:openMenu(menu)
+        exports['DP-Menu']:openMenu(menu)
     end)
 
     -- Evento para seleccionar la ped
@@ -291,11 +275,11 @@ CreateThread(function()
             header = "Cancelar",
             icon = "fa-solid fa-xmark",
             params = {
-                event = "qb-menu:closeMenu"
+                event = "DP-Menu:closeMenu"
             }
         }}
 
-        exports['qb-menu']:openMenu(menu)
+        exports['DP-Menu']:openMenu(menu)
     end)
 
     RegisterNetEvent('dp-pedsystem:client:ConfirmDelete', function(data)

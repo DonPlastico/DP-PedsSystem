@@ -20,7 +20,7 @@ server_scripts {
 
 dependencies {
     'qb-core',
-    'qb-menu',
+    'DP-Menu',
     'qb-input',
     'oxmysql'
 }
